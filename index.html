@@ -7,15 +7,36 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <!--  ZMDI Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
+    <!-- Roboto Font CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
     <title>Bootstrap Login Template</title>
 </head>
 <body>
     <div class="container-login">
-        <div class="login-form">
-
+        <div class="login-section">
+            <form action="#" class="validate-form login-form">
+                <span class="login-form-logo"><i class="zmdi zmdi-landscape"></i></span>
+                <span class="login-title">Log In</span>
+                <div class="wrap-input validate-input" data-validate="Enter username">
+                    <i class="zmdi zmdi-account icon"></i>
+                    <input class="input-field" type="text" name="username" placeholder="Username">
+                </div>
+                <div class="wrap-input validate-input" data-validate="Enter password">
+                    <i class="zmdi zmdi-lock icon"></i>
+                    <input class="input-field" type="password" name="password" placeholder="Password">
+                </div>
+                <div class="container-login-button">
+                    <button type="button" class="login-button btn-lg">Submit</button>
+                </div>    
+                <div class="text-center password-footer">
+                    <a href="#" class="password-text">Forgot Password?</a>
+                </div>
+            </form>
         </div>
     </div>
 </body>
