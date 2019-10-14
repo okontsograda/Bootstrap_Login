@@ -1,8 +1,10 @@
 # Bootstrap_Login
 Custom bootstrap login template
-\n
-Author: O.Kontsograda \n
-Date  : October 14, 2019 \n
+
+Author: O.Kontsograda
+
+Date  : October 14, 2019
+
 
 Request permission before using template for commercial use.
 
