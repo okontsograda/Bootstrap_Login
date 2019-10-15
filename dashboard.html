@@ -20,19 +20,82 @@
 </head>
 <body>
     
+    <nav class="navbar navbar-expand-lg bg-light">
+        <a class="navbar-brand" href="#">Kanban Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+    </nav>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row scroll-wrapper cards">
             <div class="col">
-                Backlog
+                <div class="section-title">Todo</div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Style Kanban</h5>
+                        <p class="card-text">Complete styling and aesthetics of the kanban board.</p>
+                        <div class="row card-tags">
+                            <div class="col">
+                                <a href="#" class="btn card-btn-todo"><i class="zmdi zmdi-arrow-right"></i></a>
+                            </div>
+                            <div class="col col-date">
+                                <p class="posted-date">Oct 15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Add Backend Features</h5>
+                        <p class="card-text">Implement database and usage of board.</p>
+                        <div class="row card-tags">
+                            <div class="col">
+                                <a href="#" class="btn card-btn-todo"><i class="zmdi zmdi-arrow-right"></i></a>
+                            </div>
+                            <div class="col col-date">
+                                <p class="posted-date">Oct 15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col">
-                Todo
+                <div class="section-title">Working On</div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Navigation</h5>
+                        <p class="card-text">Add navigation functionality with necessary page links</p>
+                        <div class="row card-tags">
+                            <div class="col">
+                                <a href="#" class="btn card-btn-working-on"><i class="zmdi zmdi-arrow-right"></i></a>
+                                <a href="#" class="btn card-btn-working-on"><i class="zmdi zmdi-account"></i></a>
+                            </div>
+                            <div class="col col-date">
+                                <p class="posted-date">Oct 15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col">
-                Working On
-            </div>
-            <div class="col">
-                Done
+                <div class="section-title">Completed</div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Create Kanban</h5>
+                        <p class="card-text">Design and implement the basic framework for the kanban board. Add basic styling.</p>
+                        <div class="row card-tags">
+                            <div class="col">
+                                <a href="#" class="btn card-btn-completed"><i class="zmdi zmdi-arrow-right"></i></a>
+                                <a href="#" class="btn card-btn-completed"><i class="zmdi zmdi-account"></i></a>
+                            </div>
+                            <div class="col col-date">
+                                <p class="posted-date">Feb 29</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
