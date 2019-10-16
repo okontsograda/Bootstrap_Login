@@ -129,14 +129,18 @@ body, html {
     padding-top: 90px;
 }
 
-.password-text {
+.link-text {
     color: #fff;
     font-family: Poppins-Regular, sans-serif;
     font-size:14px;
 }
 
+.sign-up {
+    padding-left: 45%;
+}
+
 /* Remove hover effects from password reset link and style text white */
-a.password-text, a.password-text:hover {
+a.link-text, a.link-text:hover {
     text-decoration: none;
     color:#fff;
 }
