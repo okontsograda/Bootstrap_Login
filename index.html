@@ -19,19 +19,20 @@
 <body>
     <div class="container-login">
         <div class="login-section">
-            <form action="#" class="validate-form login-form">
+            <form id="login-form" action="#" class="validate-form login-form">
                 <span class="login-form-logo"><i class="zmdi zmdi-landscape"></i></span>
                 <span class="login-title">Log In</span>
                 <div class="wrap-input validate-input" data-validate="Enter username">
                     <i class="zmdi zmdi-account icon"></i>
-                    <input class="input-field" type="text" name="username" placeholder="Username">
+                    <input class="input-field" id="username" type="text" name="username" placeholder="Username" required>
                 </div>
                 <div class="wrap-input validate-input" data-validate="Enter password">
                     <i class="zmdi zmdi-lock icon"></i>
-                    <input class="input-field" type="password" name="password" placeholder="Password">
+                    <input class="input-field" id="password" type="password" name="password" placeholder="Password">
                 </div>
+                <div id="login-error-message" class="login-error"></div>
                 <div class="container-login-button">
-                    <button type="button" class="login-button btn-lg">Submit</button>
+                    <button id="submit" type="submit" class="login-button btn-lg">Submit</button>
                 </div>    
                 <div class="text-center password-footer">
                     <a href="#" class="password-text">Forgot Password?</a>
@@ -39,5 +40,9 @@
             </form>
         </div>
     </div>
+
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

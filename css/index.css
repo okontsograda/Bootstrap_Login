@@ -140,3 +140,9 @@ a.password-text, a.password-text:hover {
     text-decoration: none;
     color:#fff;
 }
+
+.login-error {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 14px;
+}
