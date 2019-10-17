@@ -1,31 +1,44 @@
 body, html {
-    background: #F6F8FA;
+    background: #1F2427;
     font-family: Poppins-Regular, sans-serif;
-}
-
-.navbar {
-    background-color: #FFFFFF;
-    box-shadow: 1px 1px lightgray;
 }
 
 .col {
     padding: 0;
 }
 
+.input-style {
+    background-color: #3D424F;
+    border: none;
+}
+
+.input-style::placeholder {
+    color: #A9ABAF;
+}
+
+.form-control {
+    color: #fff;
+}
+
 .section-title {
     margin: 20px;
     padding-left: 12px;
     font-size: 24px;
+    width: 250px;
+    color: #fff;
 }
 
 .card {
     margin: 20px;
     width: 250px;
     border: none;
+    background-color: #2A2D39;
+    border-radius: 12px;
 }
 
 .card-body {
     padding: 15px 15px 15px 15px;
+    border-radius: 5%;
 }
 
 .card-title {
@@ -34,7 +47,7 @@ body, html {
 }
 
 .card-text {
-    color: #ADAEB5;
+    color: #A9ABAF;
     font-size: 14px;
 }
 
@@ -61,7 +74,7 @@ body, html {
 }
 
 .posted-date {
-    color: #666672;
+    color: #A9ABAF;
     font-weight: bold;
     font-size: 12px;
     display: inline-block;
@@ -73,3 +86,27 @@ body, html {
     padding-top: 5px;
 }
 
+.form-container {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-form {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    padding-left: 12px;
+}
+
+.form-btn {
+    margin-top: 31px;
+}
+
+.assigned-field {
+    color: #D75257;
+    font-weight: bold;
+    font-size: 12px;
+}

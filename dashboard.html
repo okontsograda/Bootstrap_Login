@@ -20,85 +20,43 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg bg-light">
-        <a class="navbar-brand" href="#">Kanban Dashboard</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-    </nav>
     <div class="container-fluid">
-        <div class="row scroll-wrapper cards">
-            <div class="col">
+        <div class="row form-container">
+            <form class="input-form" id="input-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title" class="form-control input-style" placeholder="Title">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text" name="description" id="description" class="form-control input-style" placeholder="Description">
+                    </div>
+                    <div class="form-group">
+                        <label for="assigned">Assigned</label>
+                        <input type="text" name="assigned" id="assigned" class="form-control input-style" placeholder="User Assigned">
+                    </div>
+                    <div class="form-group form-btn">
+                        <button id="add-card" class="form-control btn btn-success" type="submit">Add</button>
+                    </div>
+            </form>
+        </div>
+        <div class="row cards">
+            <div id="init-card-container" class="col">
                 <div class="section-title">Todo</div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Style Kanban</h5>
-                        <p class="card-text">Complete styling and aesthetics of the kanban board.</p>
-                        <div class="row card-tags">
-                            <div class="col">
-                                <a href="#" class="btn card-btn-todo"><i class="zmdi zmdi-arrow-right"></i></a>
-                            </div>
-                            <div class="col col-date">
-                                <p class="posted-date">Oct 15</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Add Backend Features</h5>
-                        <p class="card-text">Implement database and usage of board.</p>
-                        <div class="row card-tags">
-                            <div class="col">
-                                <a href="#" class="btn card-btn-todo"><i class="zmdi zmdi-arrow-right"></i></a>
-                            </div>
-                            <div class="col col-date">
-                                <p class="posted-date">Oct 15</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
             <div class="col">
                 <div class="section-title">Working On</div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Navigation</h5>
-                        <p class="card-text">Add navigation functionality with necessary page links</p>
-                        <div class="row card-tags">
-                            <div class="col">
-                                <a href="#" class="btn card-btn-working-on"><i class="zmdi zmdi-arrow-right"></i></a>
-                                <a href="#" class="btn card-btn-working-on"><i class="zmdi zmdi-account"></i></a>
-                            </div>
-                            <div class="col col-date">
-                                <p class="posted-date">Oct 15</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="col">
                 <div class="section-title">Completed</div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Create Kanban</h5>
-                        <p class="card-text">Design and implement the basic framework for the kanban board. Add basic styling.</p>
-                        <div class="row card-tags">
-                            <div class="col">
-                                <a href="#" class="btn card-btn-completed"><i class="zmdi zmdi-arrow-right"></i></a>
-                                <a href="#" class="btn card-btn-completed"><i class="zmdi zmdi-account"></i></a>
-                            </div>
-                            <div class="col col-date">
-                                <p class="posted-date">Feb 29</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
