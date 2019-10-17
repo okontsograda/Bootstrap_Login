@@ -7,6 +7,11 @@ body, html {
     padding: 0;
 }
 
+.form-row {
+    display: flex;
+    justify-content: center;
+}
+
 .input-style {
     background-color: #3D424F;
     border: none;
@@ -22,6 +27,7 @@ body, html {
 
 .section-title {
     margin: 20px;
+    text-align: center;
     padding-left: 12px;
     font-size: 24px;
     width: 250px;
@@ -34,6 +40,11 @@ body, html {
     border: none;
     background-color: #2A2D39;
     border-radius: 12px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
 }
 
 .card-body {
@@ -88,13 +99,8 @@ body, html {
 
 .form-container {
     margin-top: 24px;
-    margin-bottom: 24px;
     display: flex;
     justify-content: center;
-}
-
-.input-form {
-    margin-bottom: 30px;
 }
 
 .form-group {
@@ -109,4 +115,13 @@ body, html {
     color: #D75257;
     font-weight: bold;
     font-size: 12px;
+}
+
+.btn-danger {
+    width: 100px;
+}
+
+.btn-clear {
+    display: flex;
+    justify-content: center;
 }

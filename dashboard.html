@@ -25,32 +25,26 @@
             <form class="input-form" id="input-form">
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="title">Title</label>
                         <input type="text" name="title" id="title" class="form-control input-style" placeholder="Title">
                     </div>
                     <div class="form-group">
-                        <label for="description">Description</label>
                         <input type="text" name="description" id="description" class="form-control input-style" placeholder="Description">
                     </div>
                     <div class="form-group">
-                        <label for="assigned">Assigned</label>
                         <input type="text" name="assigned" id="assigned" class="form-control input-style" placeholder="User Assigned">
                     </div>
-                    <div class="form-group form-btn">
-                        <button id="add-card" class="form-control btn btn-success" type="submit">Add</button>
+                    <div class="form-btn">
+                        <button id="add-card" class="form-control btn btn-success" style="display:none;" type="submit"></button>
                     </div>
+                </div>
             </form>
         </div>
+        <div class="row btn-clear">
+            <button id="clear-data" class="form-control btn btn-danger">Clear</button>
+        </div>
         <div class="row cards">
-            <div id="init-card-container" class="col">
-                <div class="section-title">Todo</div>
-
-            </div>
-            <div class="col">
-                <div class="section-title">Working On</div>
-            </div>
-            <div class="col">
-                <div class="section-title">Completed</div>
+            <div id="init-card-container">
+                <div class="section-title"></div>
             </div>
         </div>
     </div>

@@ -8,14 +8,20 @@ let cardContainer;
 let cardContainerWorking;
 let cardContainerCompleted;
 
+let cardsArray = localStorage.getItem('cards') ?
+JSON.parse(localStorage.getItem('cards')) : [];
+
 // Global variables for the input data values
 const title         =   document.getElementById('title');
 const description   =   document.getElementById('description');   
 const assigned      =   document.getElementById('assigned');
 const date          =   new Date().toLocaleDateString();
 
+const data = JSON.parse(localStorage.getItem('cards'));
 
-form.addEventListener('submit', function(e) {
+
+// Process the input form when it is submitted
+document.getElementById('input-form').addEventListener('submit', function(e) {
     // TODO: Add form validation for the input fields being passed in
 
     // Assign the values parsed from the input form and push them to the array in a key-value pair
@@ -25,7 +31,11 @@ form.addEventListener('submit', function(e) {
         "date"          :   date,
         "assigned"      :   assigned.value
     };
+    
     createTaskCard(task);
+
+    cardsArray.push(task);
+    localStorage.setItem('cards', JSON.stringify(cardsArray));
     
     e.preventDefault();
 
@@ -34,28 +44,18 @@ form.addEventListener('submit', function(e) {
     description.value = '';
     assigned.value = '';
     
+});
+
+document.getElementById('clear-data').addEventListener("click", function (e) {
+    e.preventDefault();    
+    localStorage.clear();
+
+    $("#init-card-container").empty();
+
 })
-
-// ------ TEST DATA TO DISPLAY CARDS needs to migrated to use local storage / databse ------
-// var tasks = [{
-//     "title"     :   "Add JS to Kanban",
-//     "text"      :   "Finish implementing the JS functionality to the card system",
-//     "date"      :   "October 16 2019",
-//     "assigned"  :   "Dima Brovka"
-// },
-// {
-//     "title": "Implement jQuery",
-//     "text": "Make smooth transition between status sections",
-//     "date": "October 16 2019",
-//     "assigned": "Oleg Kontsograda"
-// }
-// ];
-
-// Global variable for the div tag to hold the contents of the cards
 
 // Function to create a new task card
 let createTaskCard = (task) => {
-    console.log(task);
     // Create the initial div for the card
     let card = document.createElement('div')
     card.className = 'card';
@@ -95,13 +95,14 @@ let initListOfCards = () => {
         return;
     }
     
-
     cardContainer = document.getElementById('init-card-container');
     
     // Loop through the tasks currently found in storage and create a task card
-    tasks.forEach((task) => {
-        createTaskCard(task);
-    });
+    if (data) {
+        data.forEach((task) => {
+            createTaskCard(task);
+        });
+    }
 };
 
 // Load the cards onto the page
